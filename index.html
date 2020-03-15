@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+   <head>
+     <title>
+        lab2
+     </title>
+     </head>
+ <style>
+  body{
+     background-image: url(picture.jpg);
+     background-repeat:no-repeat;
+     background-size:caption;
+     background-size:cover;
+
+}
+h1{
+      background:lightyellow;
+      color:black;
+      text-align:center;
+      font-size:38px;
+      padding:20px 20px;
+      font-weight:bold;
+      margin-left:25%;
+      margin-right:25%;
+      cursor:pointer;
+      font-family:Times New Roman;
+}
+fieldset{
+     width:50%;                                      
+	 margin:auto;
+	 border: solid white;
+	 text-align:left;
+	 font-size:14px;
+	 font-family:Times New Roman;
+	 }
+	 marquee{
+     background:#00FFFF;
+     font-size:20px;
+     padding-top:6px;
+     margin:-23px;
+     margin-left:35%;
+     margin-right:35%;
+      cursor:pointer;
+}
+
+input [type=number],[id]{
+       background:white;
+       border:1px ;
+       border-radius:2px;
+       border-width:10px;
+       font-size:15px;
+       margin:5px;
+       padding:12px;
+       display:inline-block;
+}
+input[type=button]{
+width:80px;
+height:43px;
+font-weight:bold;
+text-align:center;
+}
+
+input[type=reset]{
+width:95px;
+height:43px;
+font-weight:bold;
+}
+	 
+</style>
+<script>
+         function currencyConverter(valNum){
+         if(converter.rupees.value<= 0)
+         window.alert("Enter value Graterthan 0");
+            else{
+               document.getElementById("dollar").value = (valNum/158.93).toFixed(2);
+               document.getElementById("yuan").value = (valNum/23.12).toFixed(2);
+               document.getElementById("won").value = (valNum/0.14).toFixed(2);
+               document.getElementById("riyal").value = (valNum/42.37).toFixed(2);
+               document.getElementById("dinar").value = (valNum/522.21).toFixed(2);
+}
+}
+
+
+</script>
+<body>
+<h1> Currency Converter</h1>
+
+<br><br>
+<form name="converter">
+<fieldset>
+<label> PAK Currency(Rupees):</label>
+&nbsp  &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+ &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input type="number" id="rupees" required>
+<input type="button" value="Convert" onclick="currencyConverter(converter.rupees.value)"><br><br>
+<label>Dollar(American):</label>
+&nbsp  &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+ &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp 
+<input id = "dollar"><br><br>
+
+<label>Yuan(China):</label>
+&nbsp  &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+ &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+<input id = "yuan"><br><br>
+
+<label>Won(Korea):</label>
+&nbsp  &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+ &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input id = "won"><br><br>
+
+<label>Riyal(Saudia):</label>
+ &nbsp  &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+ &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input id = "riyal"><br><br>
+
+<label>Dinar(Kuwait):</label>
+&nbsp  &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+ &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+ <input id ="dinar"><br><br>
+
+<input type ="reset"value="Reset Form">
+<p align ="center">You can  Press Button for reseting the form</p>
+
+
+</fieldset>
+</form>
+</body>
+
+</html>
